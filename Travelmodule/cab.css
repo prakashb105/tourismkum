@@ -1,0 +1,301 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+.bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    width: 45px;
+    justify-content: space-evenly;
+    height: 45px;
+    background-color: #989595;
+    top: 20px;
+    border-radius: 10%;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.icebar
+{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+            transition: 0.3s;
+}
+.icebar:nth-child(1) { top: 10px; }
+        .icebar:nth-child(2) { top: 20px; }
+        .icebar:nth-child(3) { top: 30px; }
+
+        
+        .bar.active .icebar:nth-child(1) {
+            transform: rotate(45deg);
+            top: 20px;
+        }
+        .bar.active .icebar:nth-child(2) {
+            opacity: 0;
+        }
+        .bar.active .icebar:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 20px;
+        }
+
+.slide {
+    height: 100%;
+    width: 0;
+    background-color:#ded9d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.9s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 999;
+}
+.home
+{
+    width: 100%;
+    background-color: #ded9d9;
+    height: 15%;
+    color: #3264FF;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 1s ease;
+}
+.home:hover{
+    background-color: #989595;
+}
+
+.layer1
+{
+    width: 100%;
+    height: 450px;
+    background-color: aqua;
+}
+.layer1a
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+
+}
+.layer1b
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: dodgerblue;
+}
+.layer1ba
+{   margin-top: 50px;
+    width:80%;
+    height: 80px;
+    padding-left: 30px;
+   
+    display: flex;
+    align-items: center;
+}
+.layer1bb
+{
+    width: 80%;
+    height:120px ;
+    background-color: aqua;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: row;
+}
+.threebtndiv
+{  display: flex;
+    align-items: center;
+    border-radius: 40px;
+    justify-content: space-evenly;
+    width:fit-content;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap:10px;
+    background-color: azure;
+}
+#threebtn
+{   font-size: 20px;
+    border: none;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    border-radius: 40px;
+    outline: none;
+    
+    border: 1px solid gray;
+    transition:   background-color 3s ease;
+}
+#threebtn:hover
+{ color: white;
+    background-color: #3264FF;
+    border: none;
+}
+.thirdinput
+{
+    width: 20%;
+     border: none;
+      outline: none;
+       border-right: 1px solid black;
+       font-size: 30px; 
+       text-align: center; 
+       font-family: 'Times New Roman', Times, serif;
+       background-color: aliceblue;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+}
+.thirdinput1a
+{
+    width: 20%;
+     border: none;
+      outline: none;
+
+       font-size: 30px; 
+       text-align: center; 
+       font-family: 'Times New Roman', Times, serif;
+       background-color: aliceblue;
+     
+}
+.layer2
+{  display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    background-color: #fff;
+}
+.topcontent
+{
+    width: 80%;
+    height: 100px;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allcars
+{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+  background-color: #fff;
+}
+.cars1
+{  display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cars2
+{
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+}
+.cars1img
+{   margin-top: 20px;
+    width:100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.imgsame
+{
+    background-color:#fff;
+    width: 300px;
+    height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.carsname
+{  width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+.layer3
+{
+    width: 80%;
+    margin-left: 10%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.ratecontent
+{    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 120px;
+    background-color: #fff;
+}
+.ratetheory
+{
+    width: 100%;
+    height: fit-content;
+    background-color:#fff; 
+}
+.ratetable
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+  
+}
+table
+{  width: 100%;
+   border-collapse: collapse;
+}
+table th
+{
+    height: 40px;
+    background-color: #3264FF;
+    color:white;
+    font-size: 20px;
+}
+table td
+{   height: 30px;
+  text-align: center;
+}
+.heading1
+{  margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

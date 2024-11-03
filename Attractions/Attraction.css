@@ -1,0 +1,229 @@
+/* General Styles */
+@font-face{
+    font-family: myFont;
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+* {
+    font-family: myFont;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    margin:10px 0 0 0;
+    position: fixed;
+    top:0;
+    border-radius: 10px;
+    background: #800000;
+    box-shadow: 0 2px 8px #FFD700;
+    z-index: 1000;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 60px;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header nav div{
+    padding-left: 20px;
+}
+
+header nav div h1{
+    color: #FFD700;
+    font-size: 28px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: #FFD700;
+    padding-right: 30px;
+}
+
+header nav ul .sub-topic{
+    flex-direction: column;
+    position: absolute;
+    padding: 0 10px;
+    width: 115px;
+    height: 0;
+    display: none;
+    background: #800000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+header nav ul .sub-topic a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul #travel-drop:hover .sub-topic{
+    height: fit-content;
+    display: flex;
+}
+
+header nav ul #contact{
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+
+header nav ul #contact:hover{
+    background: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(10px);
+    transition: 0.2s all ease-in;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #FFD700;
+}
+
+header nav ul #home a::after,header nav ul #attract a::after,header nav ul #culture a::after,header nav ul #food a::after,header nav ul #accommodate a::after{
+    background: none;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    width: 0;
+    position: relative;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    z-index: 1;
+}
+
+header nav ul #home a:hover::after,header nav ul #attract a:hover::after,header nav ul #culture a:hover::after,header nav ul #food a:hover::after,header nav ul #accommodate a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+header nav ul li #travel::after{
+    all: unset;
+}
+#head {
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: flex-start;
+}
+.about{
+    margin-left:80px;
+    margin-top:20px;
+    width:90%;
+    height:auto;
+    display:flex;
+    float:left;
+}
+.about .aboutcontent{
+    width:100%;
+    height:auto;
+    float: left;
+    border-radius: 0 0 0 0;
+}
+.about .aboutimg{
+    width: 25%;
+    height:auto;
+    float:left;margin: 0 20px 0 0;
+}
+.aboutimg img{
+    width:100%;
+    height: 100%;
+    border-radius:0 0 0 0;
+}
+#abt{
+    text-align: center;
+    color:#800000;
+    text-decoration: underline;
+    margin-top: 80px;
+}
+.historyofkum{
+    margin-left:80px;
+    margin-top:10px;
+    width:90%;
+    height:auto;
+    display:flex;
+    float:left;
+}
+#his{
+    text-align: center;
+    margin-top: 30px;
+    color:#800000;
+    text-decoration: underline;
+}
+#explore{
+    text-align: center;
+    margin-top: 30px;
+    color:#800000;
+    text-decoration: underline;
+}
+#head-one, #head-two, #head-three,#head-four,#head-five,#head-six,#head-seven,#head-eight,#head-nine,#head-ten,#head-eleven{
+    width: 30%;
+    height: 400px;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+img:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.head-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(239, 246, 13);
+    font-size: 25px;
+    font-weight: bold; 
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: linear-gradient(transparent,#333333e7);
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+#head-one:hover .head-text, #head-two:hover .head-text, #head-three:hover .head-text, 
+#head-four:hover .head-text, #head-five:hover .head-text, #head-six:hover .head-text,
+#head-seven:hover .head-text, #head-eight:hover .head-text, #head-nine:hover .head-text,
+#head-ten:hover .head-text,#head-eleven:hover .head-text{
+    opacity: 1;
+    
+}
+.head-text:hover{
+    text-decoration-line:underline;
+    text-decoration-color: #800000;
+    text-decoration-thickness: 4px;
+}
+div:hover {
+    box-shadow: 6px 6px 12px rgba(23, 24, 23, 0.6);
+}

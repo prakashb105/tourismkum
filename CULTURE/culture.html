@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURE</title>
+    <style>
+        @font-face{
+            font-family: myFont;
+            src: url(../Fonts/Poppins-Regular.ttf);
+        }
+        * {
+            font-family: myFont;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            margin:10px 0 0 0;
+            position: fixed;
+            top:0;
+            border-radius: 10px;
+            background: #800000;
+            box-shadow: 0 2px 8px #FFD700;
+            z-index: 1000;
+        }
+        header nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            height: 60px;
+            overflow-x: hidden;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        header nav div{
+            padding-left: 20px;
+        }
+
+        header nav div h1{
+            color: #FFD700;
+            font-size: 28px;
+        }
+
+        header nav ul{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+            color: #FFD700;
+            padding-right: 30px;
+        }
+
+        header nav ul .sub-topic{
+            flex-direction: column;
+            position: absolute;
+            padding: 0 10px;
+            width: 115px;
+            height: 0;
+            display: none;
+            background: #800000;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        } 
+
+        header nav ul .sub-topic a{
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        header nav ul #travel-drop:hover .sub-topic{
+            height: fit-content;
+            display: flex;
+        }
+
+        header nav ul #contact{
+            border: 2px solid;
+            border-radius: 8px;
+            padding: 4px 6px;
+            cursor: pointer;
+        }
+
+
+        header nav ul #contact:hover{
+            background: rgba(255, 255, 255, 0.281);
+            backdrop-filter: blur(10px);
+            transition: 0.2s all ease-in;
+        }
+
+        header nav ul li a{
+            text-decoration: none;
+            color: #FFD700;
+        }
+
+        header nav ul #home a::after,header nav ul #attract a::after,header nav ul #culture a::after,header nav ul #food a::after,header nav ul #accommodate a::after{
+            background: none;
+            bottom: 0px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            width: 0;
+            position: relative;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            z-index: 1;
+        }
+
+        header nav ul #home a:hover::after,header nav ul #attract a:hover::after,header nav ul #culture a:hover::after,header nav ul #food a:hover::after,header nav ul #accommodate a:hover::after{
+            width: 100%;
+            left: 0;
+        }
+
+        header nav ul li #travel::after{
+            all: unset;
+        }
+        th,td{
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div>
+                <h1>Temple City</h1>
+            </div>
+            
+            <ul>
+                <li id="home"><a href="../home.html">Home</a></li>
+                <li id="attract"><a href="../Attractions/Attractions.html">Attractions</a></li>
+                <li id="culture"><a href="#">Culture</a></li>
+                <li id="food"><a href="../Food/index.html">Food</a></li>
+                <li id="travel-drop"><a id="travel" href="../Travelmodule/index.html">Travel Info</a>
+                    <div class="sub-topic">
+                        <a href="../Travelmodule/cab.html">Cab</a>
+                        <a href="../Travelmodule/busweb.html">Bus</a>
+                        <a href="../Travelmodule/train.html">Train</a>
+                    </div>
+                </li>
+                
+                <li id="accommodate"><a href="../Accommodation/Accomadation.html">Accommodation</a></li>
+                <li id="contact"><a href="../Contact Us/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center><h1 style="margin-top: 80px;">9 Navagraha Temples in Kumbakonam(Tamil Nadu) to Visit</h1>
+    <img src="./img/head.jpg" alt="header">
+    <div style="width: 60%; text-align: left;">
+        <p>Kumbakonam, a picturesque town nestled in the heart of Tamil Nadu, India, is renowned for its rich cultural heritage and ancient temples. Among its many treasures, the Navagraha Temples hold a special place, attracting pilgrims and tourists alike.</p>
+        <p>These nine temples dedicated to the celestial bodies, known as Navagrahas, offer a unique spiritual experience and are believed to bestow blessings and alleviate planetary afflictions.</p>
+    </div>
+    <h1>List of Navagraha Temples in Kumbakonam</h1>
+
+    
+    <h2>
+        Here is the list of 9 Navagraha temples in Kumbakonam:</h2>
+    <table border="1" style="border-collapse: collapse; width: 60%;font-size:24px;">
+        <tr style="background-color: #fb0;">
+            <th>Temples</th>
+            <th>Locations</th>
+        </tr>
+        
+        <tr>
+            <td>Suryanar Kovil Temple (Surya)</td>
+            <td>Aduthurai</td>
+        </tr>
+
+        <tr>
+            <td>Kailasanathar Temple (Chandra)</td>
+            <td>Thingalur</td>
+        </tr>
+
+        <tr>
+            <td>Vaitheeswaran Koil Temple (Angaragan)</td>
+            <td>Vaitheeswarankoil</td>
+        </tr>
+
+        <tr>
+            <td>Swetharanyeswarar Temple (Budha)</td>
+            <td>Thiruvenkadu</td>
+        </tr>
+
+        <tr>
+            <td>Apatsahayesvarar Temple (Guru)</td>
+            <td>Alangudi</td>
+        </tr>
+
+        <tr>
+            <td>Agniswarar Temple (Sukran)</td>
+            <td>Kanjanur</td>
+        </tr>
+
+        <tr>
+            <td>Tirunallar Saniswaran Temple (Shani)</td>
+            <td>Karaikal</td>
+        </tr>
+
+        <tr>
+            <td>Naganathar Temple (Rahu)</td>
+            <td>Thirunageswaram</td>
+        </tr>
+
+        <tr>
+            <td>Naganathaswamy Temple (Ketu)</td>
+            <td>Keezhaperumpallam</td>
+        </tr>
+
+
+    </table>
+    <br>
+    <br>
+    
+    <h2>9 Navagraha Temples to Visit in Kumbakonam</h2>
+    <br>
+    
+    
+    <p>Embark on a spiritual journey to the Navagraha Temples in Kumbakonam, where ancient myths and celestial blessings converge</p>
+    <br>
+    
+    
+    <h1>1. Suryanar Kovil Temple (Surya) | Aduthurai</h1>
+    <img src="./img/1.jpg" height="500px"/>
+    <p>Suryanar Kovil Temple is dedicated to Surya, the Sun God, and is revered for its architectural grandeur and spiritual ambience.<br>
+         Devotees visit to seek blessings for vitality, health, and prosperity.</p>
+    
+    <ul>
+        <li>Best Time to Visit: January to February.</li>
+        <li>Temple Timings: 7:00 AM to 12:30 PM, 4:00 PM to 8:30 PM - Everyday.</li>
+        <li>Nearest Railway Station: Aduthurai Railway Station.</li>
+        <li>Nearest Airport: Tiruchirappalli International Airport.</li>
+        <li>Nearest Bus Station: Aduthurai Bus Stand.</li>
+        <li>Nearby Places: Mahamaham Tank, Adi Kumbeswarar Temple, Kasi Viswanathar Temple</li>    
+    </ul>
+    <h2>2. Kailasanathar Temple (Chandra) | Thingalur</h2>
+    <img src="./img/2.jpg" height="500px" />
+    <p>Kailasanathar Temple is dedicated to Chandra, the Moon God, and is known for its serene ambience and ancient architecture.
+    <br> Devotees seek blessings for emotional stability and mental peace.</p>
+    <ul>
+        <li>Best Time to Visit: September to October, March to April.</li>
+        <li>Temple Timings: 7:00 AM to 1:00 PM, 4:00 PM to 9:00 PM - Everyday.</li>
+<li>Nearest Railway Station: Tanjore Railway Station.</li>
+<li>Nearest Airport: Tiruchirappalli International Airport.</li>
+<li>Nearest Bus Station: Kumbakonam Bus Stand.</li>
+<li>Nearby Places: Mahamaham Tank, Uppiliappan Temple, Swamimalai Murugan Temple.</li>
+    </ul>
+    <h2>3. Vaitheeswaran Koil Temple (Angaragan) | Vaitheeswarankoil</h2>
+    <img src="./img/3.jpg " height="500px" />
+    <p>Vaitheeswaran Koil Temple is dedicated to Angaragan, the planet Mars, and is renowned for its healing powers. Devotees visit 
+        <br>this temple seeking remedies for health ailments and protection from malefic planetary influences.</p>
+        <ul>
+            <li>Best Time to Visit: January to February, November.</li>
+<li>Temple Timings: 6:00 AM to 1:00 PM, 4:00 PM to 8:00 PM - Everyday.</li>
+<li>Nearest Railway Station: Vaitheeswarankoil Railway Station.</li>
+<li>Nearest Airport: Tiruchirappalli International Airport.</li>
+<li>Nearest Bus Station: Vaitheeswarankoil Bus Stand.</li>
+<li>Nearby Places: Seerkazhi, Mayiladuthurai, Thirumanancheri.</li>
+        </ul>
+        <h2> 4. Swetharanyeswarar Temple (Budha) | Thiruvenkadu</h2>
+        <img src="./img/4.jpg" height="500px" />
+        <p>Swetharanyeswarar Temple, dedicated to Budha, the planet Mercury, is nestled amidst lush greenery and serene surroundings.
+            <br> Devotees seek blessings for intelligence, communication skills, and success in education.</p>
+            <ul>
+
+<li>Best Time to Visit: June to July.</li>
+<li>Temple Timings: 6:00 AM to 12:30 PM, 4:00 PM to 8:00 PM - Everyday.</li>
+<li>Nearest Railway Station: Mayiladuthurai Junction.</li>
+<li>
+
+Nearest Airport: Tiruchirappalli International Airport.
+</li><li>
+Nearest Bus Station: Thiruvenkadu Bus Stand.</li>
+<li>Nearby Places: Swamimalai Murugan Temple, Mayiladuthurai, Sirkali, Tharangambadi (Tranquebar).
+</li>
+</ul>
+<h2>5. Apatsahayesvarar Temple (Guru) | Alangudi</h2>
+<img src="./img/5.jpg" height="500px" />
+<p>Apatsahayesvarar Temple, dedicated to the Guru, the planet Jupiter, exudes spiritual vibes and divine grace. 
+    <br>Devotees visit this temple seeking blessings for wisdom, prosperity, and success in endeavours.</p>
+    <ul>
+
+    <li>Best Time to Visit: April to June.</li>
+    <li>Temple Timings: 6:00 AM to 1:00 PM, 4:00 PM to 8:30 PM - Everyday.</li>
+    <li>Nearest Railway Station: Needamangalam Railway Station.</li>
+    <li>earest Airport: Tiruchirappalli International Airport.</li>
+    <li>Nearest Bus Station: Alangudi Bus Stand.</li>
+    <li>Nearby Places: Thiruvarur, Thirukattupalli, Thirupurambayam.
+    </li>
+    </ul>
+
+    <h2>6. Agniswarar Temple (Sukran) | Kanjanur</h2>
+    <img src="./img/6.jpg " height="500px"  />
+    <p>Agniswarar Temple, dedicated to Sukran, the planet Venus, exudes a divine aura and architectural elegance.
+        <br> Devotees visit this temple seeking blessings for love, harmony, and prosperity in relationships.
+        </p>
+        <ul>
+        <li> Time to Visit: September to March.</li>
+        <li>Temple Timings: 6:30 AM to 12:30 PM, 4:00 PM to 9:00 PM - Everyday.</li>
+        <li>Nearest Railway Station: Kumbakonam Junction</li>
+        <li>Nearest Airport: Tiruchirappalli International Airport.</li>
+        <li>Nearest Bus Station: Kumbakonam Bus Stand.</li>
+        <li>Nearby Places: Vaitheeswaran Koil Temple, Mayiladuthurai, Seerkazhi.</li>
+        </ul>
+
+        <h2>7. Tirunallar Saniswaran Temple (Shani) | Karaikal</h2>
+        <img src="./img/7.jpg" height="500px" />
+        <p>Tirunallar Saniswaran Temple, dedicated to Shani, the planet Saturn, is revered for its spiritual ambience and divine energy.
+            <br> Devotees visit this temple seeking relief from Saturn's malefic influence and blessings for longevity and prosperity.
+            </p>
+            <ul>
+            <li>Best Time to Visit: October to April.</li>
+            <li>
+            Temple Timings: 5:30 AM to 12:30 PM, 4:00 PM to 8:30 PM - Everyday.</li>
+            <li>Nearest Railway Station: Karaikal Railway Station.</li>
+            <li>Nearest Airport: Tiruchirappalli International Airport.</li>
+            <li>Nearest Bus Station: Karaikal Bus Stand.</li>
+            <li>Nearby Places: Karaikal Beach, Karaikal Ammaiyar Temple, Nagore Dargah.</li>
+            </ul>
+
+
+        <h2>
+            8. Naganathar Temple (Rahu) | Thirunageswaram
+        </h2>
+        <img src="./img/8.jpg" height="500px"  />
+        <p>Naganathar Temple, dedicated to Rahu, the ascending lunar node, is renowned for its architectural beauty and spiritual significance.
+            <br> Devotees visit this temple seeking remedies for planetary afflictions and blessings for success and prosperity.
+        </p>
+        <ul>
+                     <li>   Best Time to Visit: October to November.</li>
+         <li>   Temple Timings: 6:00 AM to 1:00 PM, 4:00 PM to 9:00 PM - Everyday.</li>
+            <li>Nearest Railway Station: Kumbakonam Railway Station.</li>
+            <li>Nearest Airport: Tiruchirappalli International Airport.</li>
+            <li>Nearest Bus Station: Kumbakonam Bus Stand.</li>
+            <li>Nearby Places: Swamimalai Murugan Temple, Mahamaham Tank, Sarangapani Temple.</li>
+        </ul>
+
+
+        <h2>9. Naganathaswamy Temple (Ketu) | Keezhaperumpallam</h2>
+        <img src="./img/9.jpg" height="500px" />
+        <p>Naganathaswamy Temple, dedicated to Ketu, the south lunar node, is revered for its spiritual sanctity and architectural splendour. 
+           <br> Devotees visit this temple seeking protection from malefic influences and blessings for spiritual growth.</p>
+            <ul>
+           <li> Best Time to Visit: September to May.</li>
+            <li>Temple Timings: 6:00 AM to 12:45 PM, 3:30 PM to 8:00 PM - Everyday.</li>
+            <li>Nearest Railway Station: Mayiladuthurai Railway Station.</li>
+            <li>Nearest Airport: Tiruchirappalli International Airport.</li>
+            <li>Nearest Bus Station: Mayiladuthurai Bus Stand.</li>
+            <li>Nearby Places: Mahalingaswamy Temple, Panchanatheeswarar Temple, Arulmigu Sakthipureeshwarar Temple.</li>
+
+            <p>
+            Explore the celestial wonders of Kumbakonam's Navagraha Temples, where spirituality meets architectural splendour.
+             These ancient shrines offer a sacred haven for devotees seeking blessings and divine grace. Plan your pilgrimage 
+             to Kumbakonam and experience the mystical charm of the Navagraha Temples firsthand.
+                </p>
+    </center>
+</body>
+</html>

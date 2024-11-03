@@ -1,0 +1,216 @@
+@font-face{
+    font-family: myFont;
+    src:url(../Fonts/Poppins-Regluar.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #800000;
+    box-shadow: 0 2px 8px #FFD700;
+    z-index: 1000;
+}
+
+header.sticky{
+    position: sticky;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 60px;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    font-weight: 600;overflow:hidden;
+}
+
+header nav div{
+    padding-left: 20px;
+}
+
+header nav div h1{
+    color: #FFD700;
+    font-size: 28px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: #FFD700;
+    padding-right: 30px;
+}
+
+header nav ul .sub-topic{
+    flex-direction: column;
+    position: absolute;
+    padding: 0 10px;
+    width: 115px;
+    height: 0;
+    display: none;
+    background: #800000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+header nav ul .sub-topic a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul #travel-drop:hover .sub-topic{
+    height: fit-content;
+    display: flex;
+}
+
+header nav ul #contact{
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+
+header nav ul #contact:hover{
+    background: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(10px);
+    transition: 0.2s all ease-in;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #FFD700;
+}
+
+header nav ul #home a::after,header nav ul #attract a::after,header nav ul #culture a::after,header nav ul #food a::after,header nav ul #accommodate a::after{
+    background: none;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    width: 0;
+    position: relative;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    z-index: 1;
+}
+
+header nav ul #home a:hover::after,header nav ul #attract a:hover::after,header nav ul #culture a:hover::after,header nav ul #food a:hover::after,header nav ul #accommodate a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+header nav ul li #travel::after{
+    all: unset;
+}
+
+.container
+{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-evenly;
+    margin-top: 80px;    
+}
+.row
+{
+    margin:20px;
+    justify-content: center;
+    display: flex;
+    gap:50px;
+    
+}
+
+.hotel
+{
+    
+    width: 700px;
+    height: 400px;
+    border-radius: 12px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center ;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 4px 6px 0 rgba(0,0,0,0.19);
+}
+.image{
+    width:270px;
+    height:400px;
+    background-color:white;
+    border-radius: 12px 0 0 12px;
+} 
+ .details{
+    width:360px;
+    height:400px;
+   
+    border-radius: 0 12px 12px 0;
+    display: flex;
+    flex-direction: column;
+} 
+#Quality-Inn{
+    width:100%;
+    height:100%;
+    border-radius: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.name{
+    width:100%;
+    height:140px;
+    border-radius: 0 12px 0 0;
+}
+.hotel-location{
+    width:100%;
+    height:130px;
+    
+}
+.btn{
+    width:100%;
+    height:130px;
+    border-radius: 0 0 12px 0;
+}
+#hotel-name{
+    width:100%;
+    height:100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 43px;
+    padding: 15px 0 0 15px;
+}
+.hotel-details{
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#view{
+    border:none;
+    width:90px;
+    height:50px;
+    font-family: inherit;
+    margin: 50px 0 0 240px;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+}
+#view:hover{
+    cursor: pointer;
+}
+#loc{
+    width:20px;
+    height: 20px;
+}

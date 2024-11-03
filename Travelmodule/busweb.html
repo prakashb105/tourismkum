@@ -1,0 +1,299 @@
+<html>
+    <link rel="stylesheet" href="busweb.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <body>
+        <div id="bar" class="bar" onclick="toggleNav()">
+            <div class="icebar"></div>
+            <div class="icebar"></div>
+            <div class="icebar"></div>
+            </div>
+            <div id="slide" class="slide">
+                <div class="home"><a href="home.html" style="text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></div>
+                <div class="home"><a href="train.html" style="text-decoration: none;"><i class="fa fa-train" aria-hidden="true"></i>&nbsp;&nbsp;Train</a></div>
+                <div class="home"><a href="#" style="text-decoration: none;"><i class="fa fa-bus" aria-hidden="true"></i>&nbsp;&nbsp;Bus</a></div>
+                <div class="home"><a href="cab.html" style="text-decoration: none; color:none"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;&nbsp;Car</a></div>
+                <div class="home"><a href="plan1.html" style="text-decoration: none;"><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;&nbsp;Packages</a></div>
+                
+                </div>
+    
+        <div style="background-image: url(busexp.jpg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;">
+            <div class="mainframe">
+        <div class="heading"><p>Hop On! </p></div>
+        <div class="heading2"><p>Book Your Bus for a Relaxing Journey!</p></div>
+          <div class="layer3">
+             <div class="leftdiv">
+                <div class="from"><p style="font-family:'Times New Roman', Times, serif;">From:</p><INPUT ID="FROM" value="CHENNAI" placeholder="ENTER SOURCE STATION"></INPUT></div>
+                <div class="to"><p>To:</p><INPUT ID="to" placeholder="ENTER DESTINATION STATION" value="Kumbakonam"></INPUT></div>
+                <div class="onwardjourney">
+                    <div class="ONWARDCONTENT">Onward Journey Date:</div>
+                    <div class="ONWARDDATE"><INPUT TYPE="Date" style="outline: none; padding: 6px; border-radius: 6px; height: 30px; width: 150px;border:1px solid black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></INPUT></div>
+                    <div class="ONWARDTIME">TIME:
+                        <SELECT style="border-radius: 6px; height: 30px; padding:5px; outline: none;">
+                            <option>ANY</option>
+                            <option>BEFORE 12PM</option>
+                            <option>12PM-8PM</option>
+                            <option>8PM</option>
+                            </SELECT>
+ 
+                    </div>
+                </div>
+                <div class="returnjourney">   
+                    <div class="ONWARDCONTENT">Return Journey Date:</div>
+                <div class="ONWARDDATE"><INPUT TYPE="Date"style="outline: none; padding:6px;border-radius: 6px; height: 30px; width: 150px;border:1px solid black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></INPUT></div>
+                <div class="ONWARDTIME">TIME:
+                    <SELECT style="border-radius: 6px; height: 30px; padding:5px; outline: none;">
+                        <option>ANY</option>
+                        <option>BEFORE 12PM</option>
+                        <option>12PM-8PM</option>
+                        <option>8PM</option>
+                        </SELECT>
+
+                </div></div>
+                <div class="adult">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adult
+                <div class="ONWARDDATE"><INPUT TYPE="number" id="adultmale"></INPUT>Male/s</div>
+                <div class="ONWARDTIME"><input type ="number" id="adultfemale"></input>Female/s
+                  
+
+                </div></div>
+                <div class="childern">&nbsp;childern
+                <div class="ONWARDDATE"><INPUT TYPE="number" id="adultmale"></INPUT>Male/s</div>
+                <div class="ONWARDTIME"><input type ="number" id="adultfemale"></input>Female/s
+                  </div></div>
+
+                <div class="transgender">&nbsp;
+                    transgender<input type="number"id="transgender" style="border:1px solid black; "></input>
+                </div>
+                <div class="service">
+                service Class<select ID="SELECTSERVICE">
+                    <option>ALL CLASSES</option>
+                    <option>AC SLEEPER</option>
+                    <option>AC SLEEPER SEATER</option>
+                    <option>AIR CONDITIONED</option>
+                    <option>CLASSIC</option>
+                    <option>DULEX</option>
+                    <option>DULEX 3&times;2</option>
+                    <option>NON AC LOWER BIRTH</option>
+                    <option>NON AC SLEEPER</option>
+                    <option>NON AC SLEEPER SEATER</option>
+                    <option>ORDINARY</option>
+                    <option>ULTRA DULEX</option>
+                    </SELECT>
+                    
+             </div>
+             </div>
+            
+            </div>
+         </div>
+            </div>
+            </div>
+          <div style="  background-color: #ede9e9; width: 100%; height:650px;">
+            <div class="next" >
+                <div class="topdestination"> Top Destination</div>
+                <div class="autoplay slider">
+                    <div ><img src="slide1.jpg" style="width:90%; "><p style="position: relative; font-size: 15px; color: white; top:0px;">sdfjjshdfjk</p></div>
+                    <div ><img src="slide2.jpg" style="width:90%;"></div>
+                    <div ><img src="slide3.jpg" style="width:90%; "></div>
+                    <div ><img src="slide44.png" style="width:90%; "></div>
+                </div>
+    </div>
+    </div>
+
+   
+  <div class="table">
+    <div class="onboard">
+        <table style="width: 100%; height: 100%; background-color: beige; overflow-y: auto;">
+            <th style="font-size: 20px; position: sticky;
+            top: 0;
+            height: 50px;
+             background-color: #f2f2f2;
+           z-index: 1; border-bottom: 2px solid black;"
+           >Boarding Points In Chennai</th>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Koyambedu</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Tambaram</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Perungalathur</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Egmore</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Guindy</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Ashok Pillar</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>T. Nagar</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Maduravoyal</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Anna Nagar</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>SRM University (Potheri)</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Vandalur</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Chrompet</td>
+            </tr>
+            
+    
+     
+            </table>
+    </div>
+    <div class="offboard">
+        <table style="width: 100%; height: 100%; background-color: beige; overflow-y: auto;">
+            <th style="font-size: 20px; position: sticky;
+                     top: 0;
+                     height: 50px;
+                      background-color: #f2f2f2;
+                    z-index: 1; border-bottom: 2px solid black;"
+           >Drop-off point</th>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>kumbakonam bus stand</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Darasuram</td>
+            </tr>
+            <tr>
+                
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i>Thirunageswaram</td>
+            </tr>
+            <td><i class="fa fa-map-marker" aria-hidden="true"></i>Aduthurai</td>
+        </tr>
+        <tr>
+            
+            <td><i class="fa fa-map-marker" aria-hidden="true"></i>Swamimalai</td>
+        </tr>
+        <tr>
+            
+            <td><i class="fa fa-map-marker" aria-hidden="true"></i>Uppiliappan Koil</td>
+        </tr>
+        <td><i class="fa fa-map-marker" aria-hidden="true"></i>Patteswaram</td>
+    </tr>
+    <tr>
+        
+        <td><i class="fa fa-map-marker" aria-hidden="true"></i>Karaikal Road</td>
+    </tr>
+    <tr>
+        
+        <td><i class="fa fa-map-marker" aria-hidden="true"></i>Valangaiman</td>
+    </tr>  <td><i class="fa fa-map-marker" aria-hidden="true"></i>Thirupureswarar Temple </td>
+</tr>
+<tr>
+    
+    <td><i class="fa fa-map-marker" aria-hidden="true"></i>Sakkottai</td>
+</tr>
+<tr>
+    
+    <td><i class="fa fa-map-marker" aria-hidden="true"></i>Chakrapani Temple</td>
+</tr>  <td><i class="fa fa-map-marker" aria-hidden="true"></i>Sundara Perumal Koil</td>
+</tr>
+<tr>
+    
+    <td><i class="fa fa-map-marker" aria-hidden="true"></i>Melacauvery</td>
+</tr>
+<tr>
+    
+    <td><i class="fa fa-map-marker" aria-hidden="true"></i>Kudanthai Keelashanathar Temple</td>
+</tr>
+            
+</table>
+    </div>
+
+  </div>
+  <div style="width: 100%; height: max-content; background-color: #ede9e9;">
+   <div class="ww">
+ <div style="width: 60%; height: 600px;  display: flex; flex-direction: column; justify-content: space-evenly; padding: 30px;">
+    <p style="margin:0; font-family: 'Times New Roman', Times, serif; font-size: 50px;" > Why Choose EaseMyTrip for Bus Ticket Booking?</p>
+    <p> wonderful platform for all bus travelers. Whether you are planning to travel to Manali or Jaipur, you can discover your favorite place through luxury and budgeted buses including sleeper, AC/NON-AC, Volvo, semi-sleeper, and room.
+        Our easy to use platform provides a hassle-free booking experience and you too can opt for bus booking online at EaseMyTrip and ditch long queues for bus tickets. Booking bus tickets online has never been this easy, but with EaseMyTrip's simple user interface, you can book bus tickets within a few clicks. Choose from 3999+ bus operators and book bus tickets online from the comfort of your home.
+         Download the EaseMyTrip app to book flight tickets , train tickets and bus tickets at lowest prices seamlessly.</p>
+ </div>
+    <div style="width: fit-content; height: fit-content;"><img src="bus-img1.png"></div>
+        <div  style="width: fit-content; height: fit-content;"><img src="bus-img2.png"></div>
+   
+    </div>
+    </div>
+    <div class="lastslide">
+        <div style="width: 90%; height: fit-content;background-color: #ede9e9;
+        display: flex;
+        flex-direction: column; margin-left: 5%;">
+        <div class="divimg">
+            <img src="last4.svg">
+            <img src="last3.svg">
+            <img src="last2.svg">
+            <img src="last1.svg">
+
+        </div>
+        <div class="lastcontent">
+            <p>Lowest Ticket Charges
+            Grab huge discounts and cashbacks on your bus booking with EaseMyTrip.</p>
+            <p>3999+ Bus Operators
+                Leverage our partnerships with over 3999 bus operators for a hassle-free journey.</p>
+                <p>Seamless Booking
+                    Our user-friendly platform makes it easy for customers to book their bus tickets.</p>
+                    <p>Trusted by 20K+ Users
+                        20K+ users have trusted and enjoyed our seamless bus booking service.
+                        Frequently Asked Questions</p>
+        </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+            $('.autoplay').slick({
+                slidesToShow: 3,      // Show 3 slides at a time
+                slidesToScroll: 1,    // Scroll one slide at a time
+                autoplay: true,       // Enable autoplay
+                autoplaySpeed: 200,  // Time in milliseconds (2 seconds)
+                infinite: true,       // Infinite loop
+                speed: 500,           // Transition speed between slides
+                dots: true,           // Show dots navigation
+            });
+        });
+        function toggleNav() {
+            var slide = document.getElementById("slide");
+            
+            
+            var bar = document.getElementById("bar");
+            bar.classList.toggle("active");
+            if (slide.style.width === "220px") {
+                slide.style.width = "0"; // Hide the side nav
+            } else {
+                slide.style.width = "220px"; // Show the side nav
+            }
+        }
+</script>
+        </body>
+    </html>p

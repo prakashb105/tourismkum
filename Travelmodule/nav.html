@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        header{
+            width: 98%;
+            position: absolute;
+            top:0;
+            margin-top: 10px;
+            border-radius: 10px;
+            background: #800000;
+            box-shadow: 0 2px 8px #FFD700;
+            z-index: 1000;
+        }
+
+        header.sticky{
+            position: sticky;
+        }
+
+        header nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            height: 60px;
+            overflow-x: hidden;
+            text-transform: uppercase;
+            font-weight: 600;overflow:hidden;
+        }
+
+        header nav div{
+            padding-left: 20px;
+        }
+
+        header nav div h1{
+            color: #FFD700;
+            font-size: 28px;
+        }
+
+        header nav ul{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+            color: #FFD700;
+            padding-right: 30px;
+        }
+
+        header nav ul .sub-topic{
+            flex-direction: column;
+            position: absolute;
+            padding: 0 10px;
+            width: 115px;
+            height: 0;
+            display: none;
+            background: #800000;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        } 
+
+        header nav ul .sub-topic a{
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        header nav ul #travel-drop:hover .sub-topic{
+            height: fit-content;
+            display: flex;
+        }
+
+        header nav ul #contact{
+            border: 2px solid;
+            border-radius: 8px;
+            padding: 4px 6px;
+            cursor: pointer;
+        }
+
+
+        header nav ul #contact:hover{
+            background: rgba(255, 255, 255, 0.281);
+            backdrop-filter: blur(10px);
+            transition: 0.2s all ease-in;
+        }
+
+        header nav ul li a{
+            text-decoration: none;
+            color: #FFD700;
+        }
+
+        header nav ul #home a::after,header nav ul #attract a::after,header nav ul #culture a::after,header nav ul #food a::after,header nav ul #accommodate a::after{
+            background: none;
+            bottom: 0px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            width: 0;
+            position: relative;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            z-index: 1;
+        }
+
+        header nav ul #home a:hover::after,header nav ul #attract a:hover::after,header nav ul #culture a:hover::after,header nav ul #food a:hover::after,header nav ul #accommodate a:hover::after{
+            width: 100%;
+            left: 0;
+        }
+
+        header nav ul li #travel::after{
+            all: unset;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div>
+                <h1>Temple City</h1>
+            </div>
+            
+            <ul>
+                <li id="home"><a href="../home.html" target="_parent">Home</a></li>
+            <li id="attract"><a href="../Attractions/Attractions.html" target="_parent">Attractions</a></li>
+            <li id="culture"><a href="../CULTURE/culture.html" target="_parent">Culture</a></li>
+            <li id="food"><a href="../Food/index.html" target="_parent">Food</a></li>
+            <li id="travel-drop"><a id="travel" href="./index.html" target="_parent">Travel Info</a>
+                <div class="sub-topic">
+                    <a href="../Travelmodule/cab.html" target="_parent">Cab</a>
+                    <a href="../Travelmodule/busweb.html" target="_parent">Bus</a>
+                    <a href="../Travelmodule/train.html" target="_parent">Train</a>
+                </div>
+            </li>
+            
+            <li id="accommodate"><a href="../Accommodation/Accomadation.html" target="_parent">Accommodation</a></li>
+            <li id="contact"><a href="../Contact Us/contact.html" target="_parent">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

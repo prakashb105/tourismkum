@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link rel="stylesheet" href="cab.css">
+    <title>Document</title>
+    <script>
+        function toggleNav() {
+            var slide = document.getElementById("slide");
+            
+            
+            var bar = document.getElementById("bar");
+            bar.classList.toggle("active");
+            if (slide.style.width === "220px") {
+                slide.style.width = "0"; // Hide the side nav
+            } else {
+                slide.style.width = "220px"; // Show the side nav
+            }
+        }
+        </script>
+</head>
+<body>
+    <div id="bar" class="bar" onclick="toggleNav()">
+        <div class="icebar"></div>
+        <div class="icebar"></div>
+        <div class="icebar"></div>
+        </div>
+        <div id="slide" class="slide">
+            <div class="home"><a href="home.html" style="text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></div>
+            <div class="home"><a href="train.html" style="text-decoration: none;"><i class="fa fa-train" aria-hidden="true"></i>&nbsp;&nbsp;Train</a></div>
+            <div class="home"><a href="busweb.html" style="text-decoration: none;"><i class="fa fa-bus" aria-hidden="true"></i>&nbsp;&nbsp;Bus</a></div>
+            <div class="home"><a href="#" style="text-decoration: none;"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;&nbsp;Car</a></div>
+            <div class="home"><a href="plan1.html" style="text-decoration: none;"><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;&nbsp;Packages</a></div>
+            
+            </div>
+    <div class="all">
+        <div class="layer1">
+            <div class="layer1a"><p style="font-size: 60px; font-family: 'Times New Roman', Times, serif; color: white; 
+            text-shadow: 1px 1px 1px rgb(249, 249, 249),1px 2px 1px rgb(249, 253, 255),1px 2px 1px rgb(249, 253, 255);">Cab4You Kumbakonam - Your Ride, Your Way</p></div>
+            <div class="layer1b">
+                <div class="layer1ba">
+                    <div class="threebtndiv">
+                        <Button id="threebtn">outstation</Button>
+                        <Button id="threebtn">Hourly</Button>
+                        <Button id="threebtn">Selfdrive</Button>
+                    </div>
+
+                
+                </div>
+                <div class="layer1bb">
+                    <input placeholder="From" style="width: 25%; border: none; outline: none; border-right: 1px solid black; font-size: 30px; text-align: center; font-family: 'Times New Roman', Times, serif; border-top-left-radius: 30px; border-bottom-left-radius: 30px;" >
+                    <input placeholder="To"style="width: 25%; border: none; outline: none; border-right:1px solid black;font-size: 30px; text-align: center; font-family: 'Times New Roman', Times, serif">
+                  <div class="thirdinput">
+                    <p style="font-size: 20px; margin-top: 30px;">Pick-Up Date & Time</p>
+                    <input type="date" style="width: 80%; border: none; font-size: 18px; margin-top: 10px;"></input>
+                  </div>
+                  <div class="thirdinput1a">
+                    <p style="font-size: 20px; margin-top: 30px; border: none;">Return Date & Time</p>
+                 
+                    <p style="font-size: 20px; margin-top: 4px; color: dodgerblue;">Book a round trip</p>
+                    <p style="font-size: 20px; margin-top: 4px; color: dodgerblue;">to save more</p>
+                  </div>
+                
+                    <button style="width: 25%; border: none; outline: none; font-size: 30px; text-align: center; font-family: 'Times New Roman', Times, serif;
+                    background-color:rgb(255, 87, 26);
+                    border-top-right-radius: 30px; border-bottom-right-radius: 30px; color: aliceblue; font-weight: bold;">search</button>
+                 </div>
+            </div>
+        </div>
+        <div class="layer2">
+             <div class="topcontent"><p style="font-family: 'Times New Roman', Times, serif;
+             font-weight: 900; font-size: 50px; color:#3264FF;">Your Journey, Your Car Choice</p></div>
+                 <div class="allcars">
+                      <div class="cars1">
+                        <div class="carsname">
+                            <div class="imgsame"><p style="font-family: 'Times New Roman', Times, serif; font-size: 
+                            40px; color:rgb(96, 93, 93); font-weight: bold;">Innova</p></div>
+                            <div class="imgsame"><p style="font-family: 'Times New Roman', Times, serif; font-size: 
+                            40px; color:rgb(96, 93, 93); font-weight: bold;">Indica</p></div>
+                            <div class="imgsame"><p style="font-family: 'Times New Roman', Times, serif; font-size: 
+                            40px; color:rgb(96, 93, 93); font-weight: bold;">Xylo</p></div>
+                        </div>
+                        <div class="cars1img">
+                      <img style="width:300px; height:300px;" src="toyota-innova-crysta-top-model-2393cc-automatic-transmission-turbo-engine-6-speed-gear-free-png.png">
+                      <img src="indica.png"style="width:300px; height:300px;">
+               <img  src="xylo.png"style="width:300px; height:300px;">
+               </div>
+                      </div>
+                      <div class="cars2">
+                        <div class="carsname">
+                            <div class="imgsame"><p style="font-family: 'Times New Roman', Times, serif; font-size: 
+                            40px; color:rgb(96, 93, 93); font-weight: bold;">Force</p></div>
+                            <div class="imgsame"><p style="font-family: 'Times New Roman', Times, serif; font-size: 
+                            40px; color:rgb(96, 93, 93); font-weight: bold;">Shift</p></div>
+                            <div class="imgsame"><p style="font-family: 'Times New Roman', Times, serif; font-size: 
+                            40px; color:rgb(96, 93, 93); font-weight: bold;">Tavera</p></div>
+                        </div>
+                        <div class="cars1img">
+                      <img style="width:300px; height:300px;" src="toyota-innova-crysta-top-model-2393cc-automatic-transmission-turbo-engine-6-speed-gear-free-png.png">
+                      <img src="shift.png"style="width:300px; height:300px;">
+               <img  src="tavera.png"style="width:300px; height:300px;">
+               </div>
+                      </div>
+                    
+                 
+                 
+                    </div>
+        </div>
+        <div class="layer3">
+            <div class="ratecontent"><p style="font-family: 'Times New Roman', Times, serif; font-size: 50px; color:#3264FF;">Taxi services fares in Kumbakonam<p></div>
+            <div class="ratetheory"><p style=" color:rgb(96, 93, 93); font-size: 24px;">At cab4you, we recognise the diverse preferences of our passengers when selecting a taxi service. In Chennai, we provide competitive and transparent car rental fares. We offer a comprehensive range of options to cater to various needs, including budget-friendly hatchbacks to spacious tempo travellers suitable for larger families. Our pricing policy is straightforward and transparent, ensuring that our taxi services fares in Chennai are both economical and easily understandable. With Savaari, you can rest assured that there are no hid
+                den charges, and you only pay for what you see.</p></div>
+            <div class="ratetable">
+                <table border="1">
+                   <tr >
+                    <th>cab Rates</th>
+                    <th>outstation (price)</th>
+                    <th>Full Taxi price </th>
+                    <th>Extended Taxi price</th>
+                     </tr>
+                     <tr>
+                        <td>etios</td>
+                        <td>Starting from ₹11.25/km</td>
+                        <td>₹1976</td>
+                        <td>₹3089</td>
+                    </tr>
+                    <tr>
+                        <td>Innova</td>
+                        <td> Starting from ₹16/km</td>
+                        <td>₹3459</td>
+                        <td>₹4183</td>
+                    </tr>
+                    <tr> 
+
+                        <td>Tempo Traveller</td>
+                        <td> Starting from ₹23/km</td>
+                        <td> NA</td>
+                        <td> NA</td>
+                    </tr>
+                    </table>
+                  
+            </div>
+            <div class="heading1"><p style="font-family: 'Times New Roman', Times, serif; font-size: 50px; color: #3264FF;">Exploring Kumbakonam, one road trip at a time</p></div>
+            <div class="heading1"><p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color:rgb(96, 93, 93);">To us, a road trip is one of the most exhilarating ways to travel the length and breadth of India. There's always something to look at, something to explore and to experience. Because we love travelling by road so much, we've been striving to make sure you have a great experience too. We wanted more of you to go on a road trip, and more of you to experience the same joys of travel that we do. Instead of driving, why not sit back and take our chauffeur driven cabs on your next vacation? We believe that the time you spend on your vacation should be entirely yours. So now, we are in 2000+ cities across India -
+                 to help you travel to wherever your heart desires.</p></div>
+                 <div class="heading1"><p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color:rgb(96, 93, 93);">We love that you're free to stop to breathe in clean air, learn about cultures and taste local food when you travel by cabs. We love that these wholesome experiences make travelling better and enrich our lives. We live for the surprises we find on road trips.</p></div>
+                 <div class="heading1"><p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color:rgb(96, 93, 93);">No city is too big or too small. We know travellers and wanderers like us are everywhere. You live near Khajuraho, you live near Aleppey, and you live near Alibag and near Tranquebar. We want you to visit them all. Pack your bags every weekend and explore everything there is to see around you.</p></div>
+                 <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color:rgb(96, 93, 93);">To make planning your vacation easier, you can book a cab with ease on our website, or call us on 9045450000 if you'd like to discuss your itinerary with our executives in detail. When you book an outstation cab with us, we'll send you a travel kit and help you plan your itinerary. We also have a handy cab booking app that will further reduce the hassles of booking a trip with us. Our expert drivers will guide you through some of the best experiences India has to offer. From the time you make a booking with us, to the time you get back home, we'll make sure you have a great road trip.</p></div>
+               
+                 <div class="heading1"><p style="font-family: 'Times New Roman', Times, serif; font-size: 30px; color:#3264FF;">  Round the Clock Service Day or Night, Sunny or Rainy, we will be available to serve you 24X7</p></div>
+                 <div class="heading1"><p style="font-family: 'Times New Roman', Times, serif; font-size: 30px; color:#3264FF;"> </p></div>
+              
+                 
+                </div>
+    </div>
+</body>
+</html>

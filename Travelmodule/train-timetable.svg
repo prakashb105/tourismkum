@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="106" viewBox="0 0 105 106">
+  <defs>
+    <filter id="Ellipse_9663">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#c5e2f8" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_77166" data-name="Group 77166" transform="translate(-135 -990)">
+    <g data-type="innerShadowGroup">
+      <ellipse id="Ellipse_9663-2" data-name="Ellipse 9663" cx="52.5" cy="53" rx="52.5" ry="53" transform="translate(135 990)" fill="#fff"/>
+      <g transform="matrix(1, 0, 0, 1, 135, 990)" filter="url(#Ellipse_9663)">
+        <ellipse id="Ellipse_9663-3" data-name="Ellipse 9663" cx="52.5" cy="53" rx="52.5" ry="53" fill="#fff"/>
+      </g>
+      <g id="Ellipse_9663-4" data-name="Ellipse 9663" transform="translate(135 990)" fill="none" stroke="#d9ebf9" stroke-width="1">
+        <ellipse cx="52.5" cy="53" rx="52.5" ry="53" stroke="none"/>
+        <ellipse cx="52.5" cy="53" rx="52" ry="52.5" fill="none"/>
+      </g>
+    </g>
+    <g id="train_timetable" data-name="train timetable" transform="translate(138.83 995.22)">
+      <path id="Path_301135" data-name="Path 301135" d="M71.693,34.254H65.381V23.433H73.5a.9.9,0,1,0,0-1.8H23.9a.9.9,0,1,0,0,1.8h8.115V34.254H25.705A2.708,2.708,0,0,0,23,36.959V71.225a2.708,2.708,0,0,0,2.705,2.705H71.693A2.708,2.708,0,0,0,74.4,71.225V36.959A2.708,2.708,0,0,0,71.693,34.254ZM33.821,23.433H63.577V34.254H57.671a9.017,9.017,0,0,0-17.943,0H33.821ZM55.913,35.156A7.214,7.214,0,1,1,48.7,27.942a7.222,7.222,0,0,1,7.214,7.214Zm-30.208.9H39.727a9.017,9.017,0,0,0,17.943,0H71.693a.9.9,0,0,1,.9.9V51.838H49.6V46.878a.9.9,0,0,0-1.8,0v4.959H24.8V36.959A.9.9,0,0,1,25.705,36.058Zm-.9,35.167V53.641H47.8V72.126H25.705A.9.9,0,0,1,24.8,71.225Zm46.889.9H49.6V53.641H72.595V71.225A.9.9,0,0,1,71.693,72.126Z"/>
+      <path id="Path_301136" data-name="Path 301136" d="M82.058,43.589H79.8V39.532a.9.9,0,1,0-1.8,0v4.959a.9.9,0,0,0,.9.9h3.156a.9.9,0,0,0,0-1.8Z" transform="translate(-30.203 -9.335)" fill="#2196f3"/>
+      <path id="Path_301137" data-name="Path 301137" d="M35.9,68.217h8.193L41.35,70.961a.9.9,0,1,0,1.275,1.275l4.283-4.283a.9.9,0,0,0,0-1.275l-4.283-4.283a.9.9,0,0,0-1.275,1.275l2.744,2.744H35.9a.9.9,0,0,0,0,1.8Z" transform="translate(-6.59 -22.24)"/>
+      <path id="Path_301138" data-name="Path 301138" d="M102.548,72.236a.9.9,0,0,0,1.275-1.275l-2.744-2.744h8.193a.9.9,0,1,0,0-1.8H101.08l2.744-2.744a.9.9,0,0,0-1.275-1.275l-4.283,4.283a.9.9,0,0,0,0,1.275Z" transform="translate(-41.186 -22.24)"/>
+      <path id="Path_301139" data-name="Path 301139" d="M35.9,102.433H49.878a.9.9,0,1,0,0-1.8H35.9a.9.9,0,0,0,0,1.8Z" transform="translate(-6.59 -43.382)"/>
+      <path id="Path_301140" data-name="Path 301140" d="M35.9,112.433h8.566a.9.9,0,1,0,0-1.8H35.9a.9.9,0,0,0,0,1.8Z" transform="translate(-6.59 -48.873)"/>
+      <path id="Path_301141" data-name="Path 301141" d="M64.705,110.63H62.9a.9.9,0,0,0,0,1.8h1.8a.9.9,0,1,0,0-1.8Z" transform="translate(-21.416 -48.873)"/>
+      <path id="Path_301142" data-name="Path 301142" d="M49.878,120.63H35.9a.9.9,0,0,0,0,1.8H49.878a.9.9,0,1,0,0-1.8Z" transform="translate(-6.59 -54.365)"/>
+      <path id="Path_301143" data-name="Path 301143" d="M104.878,100.63H90.9a.9.9,0,0,0,0,1.8h13.977a.9.9,0,0,0,0-1.8Z" transform="translate(-36.792 -43.382)"/>
+      <path id="Path_301144" data-name="Path 301144" d="M104.878,110.63H90.9a.9.9,0,0,0,0,1.8h13.977a.9.9,0,0,0,0-1.8Z" transform="translate(-36.792 -48.873)"/>
+      <path id="Path_301145" data-name="Path 301145" d="M113.115,120.63H105.9a.9.9,0,0,0,0,1.8h7.214a.9.9,0,1,0,0-1.8Z" transform="translate(-45.029 -54.365)"/>
+      <path id="Path_301146" data-name="Path 301146" d="M94.058,120.63H90.9a.9.9,0,0,0,0,1.8h3.156a.9.9,0,1,0,0-1.8Z" transform="translate(-36.792 -54.365)"/>
+    </g>
+  </g>
+</svg>

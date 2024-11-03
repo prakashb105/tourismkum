@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="railway1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+   </head>
+ 
+   <body>
+    <div id="bar" class="bar" onclick="toggleNav()">
+        <div class="icebar"></div>
+        <div class="icebar"></div>
+        <div class="icebar"></div>
+        </div>
+        <div id="slide" class="slide">
+            <div class="home"><a href="home.html" style="text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></div>
+            <div class="home"><a href="#" style="text-decoration: none;"><i class="fa fa-train" aria-hidden="true"></i>&nbsp;&nbsp;Train</a></div>
+            <div class="home"><a href="busweb.html" style="text-decoration: none;"><i class="fa fa-bus" aria-hidden="true"></i>&nbsp;&nbsp;Bus</a></div>
+            <div class="home"><a href="cab.html" style="text-decoration: none; color:none"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;&nbsp;Car</a></div>
+            <div class="home"><a href="plan1.html" style="text-decoration: none;"><i class="fa fa-binoculars" aria-hidden="true"></i>&nbsp;&nbsp;Packages</a></div>
+            
+            </div>
+    
+  <div class="maindiv">
+    <img src="backgroundtrain.png" id="screenshot_2024_10_12_131833_1" />
+    <p id="mainfont">Find the Best Train Deals to Kumbakonam</p>
+    <div class="continer1">
+        <div class="from"><p id="fromtop">From</p>
+            <input type="text"  id="input-boxf"  autocomplete="off" placeholder="From"> 
+            <div id="suggestions" class="dropdown-list"></div>
+        </div>
+        <div class="to"><p id="totop">To</p>
+            <input type="text"  id="input-boxt"  placeholder="To">
+            <div id="suggestions2" class="dropdown-list2"></div>
+        </div>
+        <div class="calender"><div id="calendertop"><p id="departure">Departure Time</p><p id="return">Return Time</p></div>
+           <div class="calbutton">
+            <input type="date" id="departure-date" name="departure-date">
+            <input type="date" id="return-date" name="return-date">
+           </div>
+        </div>
+        <div class="search">
+          <p id="searchfont"> <i class="fa fa-search" aria-hidden="true" style="width: -20px;"></i>Search</p>
+        </div>
+    </div>
+    <div class="continer2"> <i class="fab fa-wpforms" style="color: #323fff;"></i><p>&nbsp;&nbsp;&nbsp;My Bookings</p>
+    </div>
+    <div id="maintable">
+        <div class="service"></a>
+            <div class="pnrinfo"><div class="contentpnrinfo1"><p id="servicetext"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Get PNR Status</p></div>
+            <div class="servicebtn">
+                <input type="text" id="pnrinput" placeholder="Enter PNR Number"></input>
+                <button id="pnrinputbtn">Get</button>
+            </div>
+        </div>
+            <div class="trainroute"><div class="contentpnrinfo2"><p id="servicetext"><i class="fa fa-train" aria-hidden="true"></i>&nbsp;&nbsp;Train Route / Running Status</p></div>
+            <div class="servicebtn">
+                <input type="text" id="pnrinput2" placeholder="Train Name/Number"></input>
+               
+            </div>
+            <div class="twobtnforrunninginput">
+                <button id="runningstatus">Running Status</button>              
+                <button id="getroute">Get Route</button>
+            </div>
+        </div>
+             <div class="trainroute"><div class="contentpnrinfo2"><p id="servicetext"><i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp;&nbsp;Arrival/Departure at Station</p></div>
+             <div class="servicebtn">
+                <input type="text" id="pnrinput3" placeholder="Station Name/Code"></input>
+               
+            </div>
+            <div class="twobtnforrunninginput2">
+                <input type="checkbox" id="live" value="Live">Live</input>              
+                <input type="checkbox" id="all" value="All" >All</input>  
+                <button id="getroute">Get Trains</button>
+            </div>
+            </div>
+        </div>
+      <div class="overalltable">
+        <div class="tabletoptittle"><p style="margin-left: 20px; width: 30px; font-size:25px;"><i class="fa fa-bars" aria-hidden="true" ></i></p><p id="tabletoptittlecontent"> Arrival / Departure at Station - KUMBAKONAM (KMU)</p></div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Train Number</th>
+                        <th rowspan="2">Train Name</th>
+                        <th rowspan="2">Source Station</th>
+                        <th rowspan="2">Dest. Station</th>
+                        <th colspan="3" style="text-align: center;">Train Timings at KMU</th>
+                        
+                        <th colspan="7" style="text-align: center;">Running Days</th>
+                        <th rowspan="2">Available Classes</th>
+                    </tr>
+                    <tr>
+                       
+                       
+                       
+                     
+                        <th>Arrival</th>
+                        <th>Depart.</th>
+                        <th>Halt</th>
+                         <th >su</th>
+                         <th>Mo</th>
+                         <th>Tu</th>
+                         <th>We</th>
+                         <th>th</th>
+                         <th>Fr</th>  
+                         <th>Sa</th>                                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06646</td>
+                        <td>TPJ MV EXP SPL</td>
+                        <td>TPJ</td>
+                        <td>MV</td>
+                        <td>08:11</td>
+                        <td>08:12</td>
+                        <td>00:01H</td>
+                        <tD>Y</tD>
+                        <tD>Y</tD>
+                        <tD>Y</tD>
+                        <tD>Y</tD>
+                        <tD>Y</tD>
+                        <tD>Y</tD>  
+                        <TD>Y</tD>   
+                        <td>UNRESERVED</td>
+                    </tr>
+                    <tr>
+                        <td>06873</td>
+                        <td>MV TJ EXP SPL</td>
+                        <td>MV </td>
+                        <td>TJ</td>
+                        <td>20:16</td>
+                        <td>20:17</td>
+                        <td>00:01H</td>
+                        <th>Y</th>
+                        <th>Y</th>
+                        <th>Y</th>
+                        <th>Y</th>
+                        <th>Y</th>
+                        <th>Y</th>  
+                        <th>Y</th>   
+                        <td>UNRESERVED</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>22624</td>
+                        <td>CHENNAI EXPRESS</td>
+                        <td>MDU</td>
+                        <td>MS</td>
+                        <td>00:24</td>
+                        <td>00:26</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>X</TD> <TD>X</TD> <TD>X</TD> <TD>X</TD> <TD>Y</TD> <TD>X</td>
+                        <td>2A, 3A, SL, 2S</td>
+                    </tr>
+                    <tr>
+                        <td>16751</td>
+                        <td>RAMESWARAM EXP</td>
+                        <td>MS</td>
+                        <td>MMM</td>
+                        <td>00:25</td>
+                        <td>00:27</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>1A, 2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>16752</td>
+                        <td>CHENNAI EXPRESS</td>
+                        <td>MMM</td>
+                        <td>MS</td>
+                        <td>00:34</td>
+                        <td>00:36</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>1A, 2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>22623</td>
+                        <td>MADURAI EXPRESS</td>
+                        <td>MS</td>
+                        <td>MDU</td>
+                        <td>03:13</td>
+                        <td>03:15</td>
+                        <td>00:02H</td>
+                        <td>X</td> <TD>Y</TD><TD> X</TD> <TD>X</TD> <TD>X</TD> <TD>X</TD> <TD>Y</td>
+                        <td>2A, 3A, SL, 2S</td>
+                    </tr>
+                    <tr>
+                        <td>16865</td>
+                        <td>UZHAVAN EXPRESS</td>
+                        <td>MS</td>
+                        <td>TJ</td>
+                        <td>04:03</td>
+                        <td>04:05</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>1A, 2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>20606</td>
+                        <td>TCN MS SF EXP</td>
+                        <td>TCN</td>
+                        <td>MS</td>
+                        <td>04:08</td>
+                        <td>04:10</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>1A, 2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>20691</td>
+                        <td>TBM NCJ ANTYODAYA</td>
+                        <td>TBM</td>
+                        <td>NCJ</td>
+                        <td>04:28</td>
+                        <td>04:30</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>UNRESERVED</td>
+                    </tr>
+                    <tr>
+                        <td>16367</td>
+                        <td>KASHI TAMIL EXP</td>
+                        <td>CAPE</td>
+                        <td>BSBS</td>
+                        <td>04:44</td>
+                        <td>04:46</td>
+                        <td>00:02H</td>
+                        <td>X</td> <TD>X</TD><TD> X</TD> <TD>X</TD> <TD>X</TD> <TD>Y</TD> <TD>X</td>
+                        <td>1A, 2A, 3A, 3E, SL</td>
+                    </tr>
+                    <tr>
+                        <td>16232</td>
+                        <td>MYS CUPJ EXP</td>
+                        <td>MYS</td>
+                        <td>CUPJ</td>
+                        <td>05:38</td>
+                        <td>05:40</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>22535</td>
+                        <td>RMM BSBS EXPRESS</td>
+                        <td>MMM</td>
+                        <td>BSBS</td>
+                        <td>06:43</td>
+                        <td>06:45</td>
+                        <td>00:02H</td>
+                        <td>X</td> <TD>X</TD><TD> X</TD> <TD>X</TD> <TD>Y</TD> <TD>X</TD> <TD>X</td>
+                        <td>2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>22613</td>
+                        <td>SHRADDHA SETHU</td>
+                        <td>MMM</td>
+                        <td>AYC</td>
+                        <td>06:43</td>
+                        <td>06:45</td>
+                        <td>00:02H</td>
+                        <td>X</td> <TD>Y</TD><TD> X</TD> <TD>X</TD> <TD>X</TD> <TD>X</TD> <TD>X</td>
+                        <td>2A, 3A, SL</td>
+                    </tr>
+                    <tr>
+                        <td>16811</td>
+                        <td>MV TPJ EXPRESS</td>
+                        <td>MV</td>
+                        <td>SA</td>
+                        <td>07:02</td>
+                        <td>07:04</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>Y</TD><TD> Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</TD> <TD>Y</td>
+                        <td>UNRESERVED</td>
+                    </tr>
+                    <tr>
+                        <td>09420</td>
+                        <td>TPJ ADI SPL</td>
+                        <td>TPJ</td>
+                        <td>ADI</td>
+                        <td>07:08</td>
+                        <td>07:10</td>
+                        <td>00:02H</td>
+                        <td>Y</td> <TD>X</TD><TD> X</TD> <TD>X</TD> <TD>X</TD> <TD>X</TD> <TD>X</td>
+                        <td>2A, 3A, SL</td>
+                    </tr>
+                    
+                  
+               
+                
+                </tbody>
+            </table>
+        </div>
+            
+        
+    </div>
+    </div>
+    <div class="next">
+        <div style="display: flex; flex-direction: row; justify-content:safe" >
+        <P style="color: #323fff; font-size:70px; display: inline-block; font-weight: bold; margin-left:80px; ">Get More</P><P style="font-size:70px;"> Train Information</P>
+    </div>
+    <div style="margin-left: 90px; font-size: 25px;">Get instant access to crucial train details for seamless train journeys.
+        </div>
+       
+        <div  style="width: 100%; justify-content: space-evenly; height: 200px; background-color: #fff; align-items:center; font-weight: bold; font-size:20px; display: flex;">
+            <img src="train-timetable.svg">Train Time
+            Table
+            <img src="pnrsvg.svg">PNR Status enquiery
+            <img src="train-seat.svg">Train Running Status
+            <img src="train-status.svg">Train Availablity
+            <img src="tatkal.svg"> Train Coach Position
+        </div>
+       <p style="font-size: 45px; font-weight: bold;">Kumbakonam Railway Station Overview</p>
+       <div style="width: 80%; margin-top: 10px">
+        Kumbakonam is one of the most crucial railway stations in India that has a station code name of KMU. As a leading platform under the central district, it’s considered as the busiest station and it serves as the major transportation hub. At present, approximately trains passess through the KMU in total. The Kumbakonam offers every traveller with a vast range of facilities, such as availability of ticket counters, food halls, sanitised washrooms, restrooms, ticket counters and access to various transportation modes. With these services, the Kumbakonam aims to provide comfortable and relaxing experiences to the travellers. Overall, the station is well-connected with other cities also, making it easier to reach the destination. So, if you’re ready to start your railway trip, then book your online train tickets with EaseMyTrip and have the best travel experience on your journey.
+        </div>
+        <div  style="width: 100%; justify-content: space-evenly; height: 200px; background-color: #fff; align-items:center; font-weight: bold; font-size:20px; display: flex;">
+</div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+   
+</body>
+</html>
+

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Veg</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <style>
+            body{
+                font-family: poppins;
+            }
+            .search{
+                position: relative;
+                width:100%;
+            }
+            .call {
+                text-decoration: none;
+                color: white;
+                background-color: rgb(52, 116, 255);
+                margin-right: 40px;
+            }
+            .menu {
+                margin-left: 60px;
+                text-decoration: none;
+                color: rgb(52, 116, 255);
+                border: 1px solid rgb(52, 116, 255);
+            }
+            input[type="text"]{
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid #ccc;;
+                padding: 5px 15px 5px 40px;
+                background: url('data:image/svg+xml;utf8,&#128269;') no-repeat 10px center;
+                background-size: 20px;
+            }
+            .search .icon{
+                position: absolute;
+                left:10px;top: 50px;
+                transform: translateY(-180%);
+                color: #888;
+            }
+            .view{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+                margin-top: 20px;
+                border: 1px solid orange;
+                height: 300px;
+                border-radius: 20px;
+                background-color: orange;
+                display: flex;
+            }
+            .ii{
+                border-radius: 20px;
+                position: relative;
+                left: 2%;
+                top: 3%;
+                border: 2px solid;
+            }
+            .hotelName h2{
+                
+                height: 33%;
+                width: 100%;
+                display: inline;
+                
+            }
+            .rate h3{
+                min-width: 80px;
+                max-width: 60px;
+                text-align: center;  
+                color: white;
+                border-radius:15px;
+                border: 1px solid #4CAF50;
+                background-color: #4CAF50;
+                
+            }
+            
+            
+            .content{
+
+                position: relative;
+                left: 5%;
+                top: 20%;
+                display: flex;
+                flex-direction: column;
+            }
+            .rate{
+                display: flex;
+                gap: 10px;
+            }
+            
+            
+            button{
+                cursor: pointer;
+                font-size: 100%;
+                border: none;
+                border-radius: 20px;
+                width: 40%;
+                height: 30px;
+                
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            }
+            /* button{
+                width: 40%;
+                text-align: center;
+                border: 1px solid rgb(52, 116, 255);
+                
+                margin-top: 20px;
+                margin-left: 5%;
+                
+                
+            }
+            button{margin-left: 10%;
+                width: 40%;
+                text-align: center;
+                border: 3px solid rgb(52, 116, 255);
+                border-radius: 20px;
+                margin-top: 20px;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.5); 
+        }*/
+            
+            .all{
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                margin-right: 20px;
+                
+            }
+            p{
+                font-size: large;
+                
+            }
+            .cc{
+                display: flex;
+            }
+            .cc button{
+                width: 300px;
+            }
+            #recommendationList {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            max-width: 200px;
+            background-color: #f9f9f9;
+        }
+        #recommendationList li {
+            padding: 8px;
+            cursor: pointer;
+        }
+        #recommendationList li:hover {
+            background-color: #e0e0e0;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="all">
+            <div class="search"><form action="">
+                <span class="icon">&#128269;</span><input type="text" id="searchInput" placeholder="Restaurant"></form></div>
+                <ul id="recommendationList"></ul>
+            <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Best Restaurants in Kumbakonam(Veg and Non-Veg)</h1>
+
+
+            <div class="view">
+                <div><img src="Temple/hotel1/img1.jpg" alt="temple" width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Mangalambiga Coffee & Tiffin Center</h2></div>
+                    <div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Ratings</h4></div>
+                    <p>South Indian breakfast and tiffin items like idli,dosa, and vada.<br>Famous for Kumbakonama degree coffee.</p>
+                    <div class="cc">
+                        <a href="tel:+91 97511 92870"><button class="call">Call Now</button></a>
+                        <a href="Info1.html"><button class="menu">Info</button></a></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view">
+                <div><img src="Temple/hotel2/main.jpg" alt="temple" width="500px" height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Murugan Cafe</h2></div>
+                    <div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1k Ratings</h4></div>
+                    <p>South Indian vegetarian meals, crispy dosas and filter coffee.</p>
+                    <div class="cc"><a href="tel:+91 9965544061"><button class="call">Call Now</button></a>
+                    <a href="Info2.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+ 
+            <div class="view">
+                <div><img src="Temple/hotel3/main.jpg" alt="temple" width="500px" height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Sri Mangalambigai Vilas</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">4.5 &#9733;</h3><h4>409 Rating</h4></div></div>
+                    <p>Authentic Tamil Nadu vegetarian meals served on banana leaves.</p>
+                    <div class="cc"><a href="tel:+91 9786664040"><button class="call">Call Now</button></a>
+                    <a href="Info3.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+ 
+            <div class="view">
+                <div><img src="Temple/hotel4/main.jpg" alt="temple" width="500px" height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Sri Balaji Bhavan</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.2k Rating</h4></div></div>
+                    <p>vegetarian thalis,tiffin option like pongal, dosas and idlis</p>
+                    <div class="cc"><a href="tel:+91 9751192870"><button class="call">Call Now</button></a>
+                        <a href="Info5.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+            <div class="view">
+                <div><img src="Temple/hotel5/main.jpg" alt="temple" width="500px"  height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Sri Annapoorna Sweets & Snacks</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">4.3 &#9733;</h3><h4>790 Rating</h4></div></div>
+                    <p>Offers traditional South Indian meals, sweets and savory snacks.</p>
+                    <div class="cc"><a href="tel:+91 9751192870"><button class="call">Call Now</button></a>
+                    <a href="Info5.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+
+            <div class="view">
+                <div><img src="Temple/hotel6/main.jpg" alt="temple" width="500px"  height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Hotel Vasantha Bhavan</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">4.2 &#9733;</h3><h4>550 Rating</h4></div></div>
+                    <p>Extensive vegetarian thalis, crisp vadas, and aromatic filter coffee.</p>
+                    <div class="cc"><a href="tel:+91 9677489277"><button class="call">Call Now</button></a>
+                    <a href="Info6.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+
+            <div class="view">
+                <div><img src="Temple/hotel7/main.jpg" alt="temple" width="500px"  height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Anandha Bhavan</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Rating</h4></div></div>
+                    <p>Popular for its soft idlis, uttapams and chutneys.</p>
+                    <div class="cc"><a href="tel:+91 9751192870"><button class="call">Call Now</button></a>
+                    <a href="Info7.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+            <div class="view">
+                <div><img src="Temple/hotel8/main.jpg" alt="temple" width="500px"  height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i>Sri Krishna Bhavan</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.7 &#9733;</h3><h4>217 Rating</h4></div></div>
+                    <p>A wide variety of vegetarian South Indian dishes and thalis.</p>
+                    <div class="cc"><a href="tel:+91 9443549404"><button class="call">Call Now</button></a>
+                    <a href="Info8.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="view">
+                <div><img src="Temple/hotel10/main.jpg" alt="temple" width="500px" height="280px"  class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Bhagavathi Bhavan</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3 &#9733;</h3><h4>118 Rating</h4></div></div>
+                    <p>Acozy place for traditional vegetarian meals like sambar, rasam, and vegetable curries.</p>
+                    <div class="cc"><a href="tel:+91 9443143439"><button class="call">Call Now</button></a>
+                    <a href="Info10.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            <div class="view">
+                <div><img src="Temple/raya/main.jpg" alt="temple" width="500px" height="280px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Rayas Restaurant</h2></div>
+                    <div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Ratings</h4></div>
+                    <p>South Indian breakfast and tiffin items like idli,dosa, and vada.<br>Famous for Kumbakonama degree coffee.</p>
+                    <div class="cc"><a href="tel:+91 97511 92870"><button class="call">Call Now</button></a>
+                    <a href="NInfo1.html"><button class="menu">Info</button></a></button></div>
+
+                </div>
+            </div>
+            <div class="view">
+                <div><img src="Temple/kfc/kfc.jpg" alt="temple"  height="280px" width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i>KFC</h2></div>
+                    <div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Ratings</h4></div>
+                    <p>South Indian vegetarian meals, crispy dosas and filter coffee.</p>
+                    <div class="cc"><a href="tel:+91 93443 01418"><button class="call">Call Now</button></a>
+                    <a href="NInfo2.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+ 
+            <div class="view">
+                <div><img src="Temple/Shree/main.jpg" alt="temple" height="280px"  width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Sree Murari</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Rating</h4></div></div>
+                    <p>Authentic Tamil Nadu vegetarian meals served on banana leaves.</p>
+                    <div class="cc"><a href="tel:+91 93443 01418"><button class="call">Call Now</button></a>
+                    <a href="NInfo3.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+ 
+            <div class="view">
+                <div><img src="Temple/anaz/main.jpg" alt="temple"  height="280px" width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Anaz Restaurant</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Rating</h4></div></div>
+                    <p>vegetarian thalis,tiffin option like pongal, dosas and idlis</p>
+                    <div class="cc"><a href="tel:+91 93443 01418"><button class="call">Call Now</button></a>
+                    <a href="NInfo4.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+            <div class="view">
+                <div><img src="Temple/fayaz/main.jpg" alt="temple" height="280px"  width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Fayaz Restaurant</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Rating</h4></div></div>
+                    <p>Offers traditional South Indian meals, sweets and savory snacks.</p>
+                    <div class="cc"><a href="tel:+91 93443 01418"><button class="call">Call Now</button></a>
+                    <a href="NInfo5.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+
+            <div class="view">
+                <div><img src="Temple/meat/main.jpg" alt="temple"height="280px"  width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Meat and Eat</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Rating</h4></div></div>
+                    <p>Extensive vegetarian thalis, crisp vadas, and aromatic filter coffee.</p>
+                    <div class="cc"><a href="tel:+91 93443 01418"><button class="call">Call Now</button></a>
+                    <a href="NInfo6.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+
+            <div class="view">
+                <div><img src="Temple/dubai/main.jpg" alt="temple"height="280px"  width="500px" class="ii"></div>
+                <div class="content">
+                    <div class="hotelName"><h2><i class="fas fa-thumbs-up"></i> Dubai Restaurant</h2></div>
+                    <div class="rate"><div class="rate"><h3 class="rate1">3.9 &#9733;</h3><h4>1.9k Rating</h4></div></div>
+                    <p>Popular for its soft idlis, uttapams and chutneys.</p>
+                    <div class="cc"><a href="tel:+91 93443 01418"><button class="call">Call Now</button></a>
+                    <a href="NInfo7.html"><button class="menu">Info</button></a></div>
+                </div>
+            </div>
+            
+        </div>
+        <script>
+            // Sample data array for demonstration purposes
+            const data = [
+                "Mangalambiga Coffee & Tiffin Center",
+                "Sri Krishna Bhavan",
+                "Bhagavathi Bhavan",
+                "Anandha Bhavan",
+                "Hotel Vasantha Bhavan",
+                "Sri Annapoorna Sweets & Snacks",
+                "Sri Balaji Bhavan",
+                "Sri Mangalambigai Vilas",
+                "Murugan Cafe",
+                "Rayas Restaurant",
+                "Dubai Restaurant",
+                "Meat and Eat",
+                "Fayaz Restaurant",
+                "Anaz Restaurant",
+                "Sree Murari",
+                "KFC"
+                
+            ];
+    
+            // Function to get search recommendations
+            function getRecommendations(query) {
+                if (!query) return [];
+                return data.filter(item => item.toLowerCase().includes(query.toLowerCase()));
+            }
+    
+            // Event listener for the search input
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const query = this.value;
+                const recommendations = getRecommendations(query);
+                const recommendationList = document.getElementById('recommendationList');
+                
+                // Clear existing recommendations
+                recommendationList.innerHTML = '';
+    
+                // Display new recommendations
+                if (recommendations.length > 0) {
+                    recommendations.forEach(item => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = item;
+                        listItem.onclick = () => {
+                            document.getElementById('searchInput').value = item;
+                            recommendationList.innerHTML = ''; // Clear list after selection
+                        };
+                        recommendationList.appendChild(listItem);
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+@font-face{
+    font-family: myFont;
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+* {
+    font-family: myFont;
+    padding: 0;
+    margin: 0;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: yellow;
+}
+#header:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #f5f5f5;
+    text-decoration-thickness: 2px;
+    text-shadow: 5px 5px 5px black;
+}
+.Starting-img{
+    width:100%;
+    height:auto;
+    margin-left: 120px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.photo{
+    width: 400px;
+    height:auto;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.location{
+    width:20px;
+    margin-top: 70px;
+    margin-left:100px ;
+    display: flex;
+    height:30px;
+
+}
+.distance{
+    width:20px;
+    height:30px;
+    display:flex;
+    margin-left:-20px;
+    margin-top:124px;
+}
+.Trip{
+    width:20px;
+    height:30px;
+    display: flex;
+    margin-top: 175px;
+    margin-left:-20px;
+}
+.locat{
+    width:20px;
+    height:30px;
+    display: flex;
+    margin-top: 225px;
+    margin-left:-20px;
+}
+.Star{
+    width:20px;
+    height:30px;
+    display: flex;
+    margin-top: 275px;
+    margin-left:-20px;
+}
+.Travel{
+    width:20px;
+    height:30px;
+    display: flex;
+    margin-top: 330px;
+    margin-left:-20px;
+}
+.Starting-img .content{
+    width:50%;
+    height: 330px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.Starting-img .content .place{
+        color: rgb(119, 107, 221);
+        font-size: 18px;
+        margin-top: 0px;
+        display: flex;
+    }
+.Starting-img .content .dis{
+        color: rgb(12, 12, 17);
+        font-size: 18px;
+        margin-top: 25px;
+        display: flex;
+    }
+.Starting-img .content .time{
+        color: rgb(12, 12, 17);
+        font-size: 18px;
+        margin-top: 25px;
+        display: flex;
+    }
+.Starting-img .content .loc{
+        color: rgb(12, 12, 17);
+        font-size: 18px;
+        margin-top: 24px;
+        display: flex;
+    }
+.Starting-img .content .visit{
+        color: rgb(12, 12, 17);
+        font-size: 18px;
+        margin-top: 23px;
+        display: flex;
+    }
+.Starting-img .content .Travelopt{
+        color: rgb(12, 12, 17);
+        font-size: 18px;
+        margin-top: 26px;
+        display: flex;
+    }
+.Starting-img .content a:hover{
+        text-decoration:underline;
+        text-decoration-color: #800000;
+        text-decoration-thickness:3px;
+}
+.Starting-img .content .place:hover{
+    text-decoration:underline;
+    text-decoration-color: #800000;
+    text-decoration-thickness:3px;
+}
+.history{
+    width:95%;
+    height:auto;
+    margin-top: 20px;
+}
+.history .history-content{
+    margin-left: 80px;
+}
+#head {
+    position: relative;
+    max-width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    height:400px;
+}
+.slideimage {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 400px;
+}
+.slideimage:first-of-type {
+    display: block;
+}
+.head-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.head-container-1{
+    display: flex;
+    justify-content: center;
+}
+.head-container-2{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    height: 200px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.containerimg {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+.containerimg:hover {
+    opacity: 1;
+}
+.active {
+    border: 2px solid #4CAF50; 
+    opacity: 1; 
+}
+

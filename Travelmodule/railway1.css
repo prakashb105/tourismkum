@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    width: 45px;
+    justify-content: space-evenly;
+    height: 45px;
+    background-color: #989595;
+    top: 20px;
+    border-radius: 10%;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.icebar
+{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+            transition: 0.3s;
+}
+.icebar:nth-child(1) { top: 10px; }
+        .icebar:nth-child(2) { top: 20px; }
+        .icebar:nth-child(3) { top: 30px; }
+
+        
+        .bar.active .icebar:nth-child(1) {
+            transform: rotate(45deg);
+            top: 20px;
+        }
+        .bar.active .icebar:nth-child(2) {
+            opacity: 0;
+        }
+        .bar.active .icebar:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 20px;
+        }
+
+.slide {
+    height: 100%;
+    width: 0;
+    background-color:#ded9d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.9s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 999;
+}
+.home
+{
+    width: 100%;
+    background-color: #ded9d9;
+    height: 15%;
+    color: #3264FF;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 1s ease;
+}
+.home:hover{
+    background-color: #989595;
+}
+
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+.trainbackground
+{
+width:100%; height:600px;
+  background-image: url("trainback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   display: block;
+}
+#screenshot_2024_10_12_131833_1 {
+    height: 500px;
+    width: 100%;
+
+  
+}
+.maindiv
+{
+    display: flex;
+    justify-content: center;
+}
+.continer1
+{    position:absolute;
+    background-color: rgb(247, 245, 245);
+     border-radius: 28px;
+        width: 1100px;
+        height: 150px;
+    justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+  align-items: center;
+ margin-top: 190px;       
+    }
+    .continer2
+{    position:absolute;
+    background-color: rgb(247, 244, 244);
+     border-radius: 20px;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #3264FF;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif ;
+        height: 65px;
+        margin-top: 350px;
+        
+}
+#mainfont
+{
+    font-family: Irish Grover;
+    font-size: 60px;
+    position:absolute;
+    top:120px;
+    left:220px;
+
+    font-weight: bold;
+    color: white;
+    
+}
+.from
+{
+    width:200px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    border:2px solid rgb(132, 130, 130);
+}
+.to
+{
+    width:200px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    border:2px solid rgb(132, 130, 130);
+
+}
+
+.calender
+{
+    width:400px;
+    height:60px;
+    background-color: white;
+    border-radius: 10px;
+    border:2px solid rgb(132, 130, 130);
+    display: flex;
+    flex-direction: column;
+    
+}
+.search
+{
+    width:200px;
+    height: 60px;
+    background-color:#3264FF;
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  
+
+}
+#fromtop
+{
+    color: rgb(148, 146, 142);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:3px;
+    margin-left:3px;
+}
+#totop
+{ font-size: 20px;
+    font-weight: 700;
+    color:rgb(138, 136, 134);
+    margin-top:3px;
+    margin-left:3px;
+
+}
+#departure
+{ font-size: 20px;
+    font-weight: 700;
+    color:rgb(138, 136, 134);
+    margin-top:3px;
+    margin-left:6px;
+
+}
+#calendertop
+{
+    display: flex;
+    flex-direction: row;
+}
+#return
+{ font-size: 20px;
+    font-weight: 700;
+    color:rgb(138, 136, 134);
+    margin-top:3px;
+    margin-left:78px;
+
+}
+.calbutton
+{
+    background-color:#fff;
+    width:100%;
+    height:100%;
+    display: flex;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px;
+    flex-direction: row;
+   
+}
+#departure-date
+{
+    margin-bottom:3px;
+    margin-left:15px;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: #555353;
+}
+#return-date
+{ outline: none;
+    margin-bottom:3px;
+    margin-left:89px;
+    border: none;
+    color: #555353;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#searchfont
+{
+    color:#fff;
+    font-size: 30px;
+    margin-right: 20px;
+
+
+}
+#input-boxf
+{
+    width: 100%;
+    height:31px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    outline:none;
+    border-bottom-color: #fff;
+    transition: border-bottom-color 3s ease-out; /* Slow down color transition */
+}
+
+#input-boxf:hover {
+    border-bottom: 7px solid #3264FF; /* Keep the border size consistent */
+    height: 33px;
+    border-bottom-color: #3264FF; /* Animate only the color */
+}
+
+#input-boxt {
+    width: 100%;
+    height: 31px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    outline: none;
+    border-bottom-color: #fff;
+    transition: border-bottom-color 3s ease-out; /* Slow down color transition */
+}
+
+#input-boxt:hover {
+    border-bottom: 7px solid #3264FF; /* Keep the border size consistent */
+    height: 33px;
+    border-bottom-color: #3264FF; /* Animate only the color */
+}
+.dropdown-list {
+    position: absolute;
+    width:198px;
+    border-radius: 5px;
+    max-height: 150px;
+    background-color: rgb(248, 243, 243);
+    border: 1px solid #555353;
+    border-top: none;
+    z-index: 1000;
+    overflow-y: auto;
+    display: none;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(244, 243, 243);
+   
+}
+
+.dropdown-item:hover {
+    background-color: #9d9a9a;
+}
+.dropdown-list2 {
+    position: absolute;
+    width:198px;
+    border-radius: 5px;
+    max-height: 150px;
+    background-color: rgb(248, 243, 243);
+    border: 1px solid #555353;
+    border-top: none;
+    z-index: 1000;
+    overflow-y: auto;
+    display: none;
+}
+
+.dropdown-item2{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(244, 243, 243);
+   
+}
+
+.dropdown-item2:hover {
+    background-color: #9d9a9a;
+}
+/* For the entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+}
+
+/* For the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light grey background */
+}
+
+/* For the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(183, 183, 223); /* Blue color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #f1f1f1; /* Optional: adds padding around the thumb */
+}
+
+/* For the scrollbar thumb when hovering */
+::-webkit-scrollbar-thumb:hover {
+    background: #007BFF; /* Darker blue when hovered */
+}
+#maintable
+{
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+top:450px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+flex-direction:row;
+}
+.service
+{ margin-top:50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+    width: 20%;
+    height: 100%;
+    background-color:#fff;
+    padding: 20px;
+}
+.trainroute
+{  padding: 4px;
+    width: 100%;
+    height: 160px;
+    background-color:#fff;
+     border-radius:10px;
+     border: 2px solid gray;
+     display: flex;
+     flex-direction: column;
+}
+.arrivaldeparture
+{padding: 4px;
+    width: 100%;
+    height: 130px;
+    background-color:#fff;
+       border-radius: 10px;
+       border: 2px solid gray;
+       display: flex;
+       flex-direction: column;
+}
+.pnrinfo{padding: 4px;
+    width: 100%;
+    height: 120px;
+    background-color:#fff;
+       border-radius: 10px;
+       border: 2px solid gray;
+       display: flex;
+       flex-direction: column;
+}
+.servicebtn
+{
+    width: 100%;
+    height:    calc(100vh - 100px); 
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+
+    
+}
+#pnrinput
+{
+    border:2px solid rgb(98, 96, 96);
+    outline:none;
+    font-size: 16px;
+    padding: 5px;
+    width: 70%;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60%;
+}
+#pnrinputbtn
+{
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 5px;
+    height: 60%;
+    color:#fff;
+    font-size: 15px;
+    background-color: #3264FF;
+}
+#servicetext
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: #9d9a9a;
+    text-align: center;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.twobtnforrunninginput
+{
+    width: 100%;
+    height:400px;
+    background-color: rgb(234, 229, 229);
+}
+.twobtnforrunninginput2
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height:400px;
+    background-color: #FFF;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+#pnrinput2
+{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+
+}
+#pnrinput3
+{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+  
+}
+#runningstatus
+{
+    width: 48%;
+    height: 100%;
+    outline:none;
+    border-radius: 8px;
+    color: #fff;
+    border:none;
+    font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+    background-color: #3264FF;
+
+
+}
+#getroute
+{ margin-left: 6px;
+    width: 48%;
+    height: 100%;
+    outline:none;
+   border-radius: 8px; 
+   color: #fff;
+   border:none;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;
+   background-color: #3264FF;
+}
+.table
+{margin-top:50px;
+    width: 80%;
+    height: 100%;
+    background-color:#fff;
+
+}
+.table-container {
+    width: 100%;          /* Adjust to your preference */
+    height: 440PX;        /* Set a fixed height for scrollable area */
+    overflow-y: auto;     /* Enable vertical scrolling */
+    border: 1px solid #ccc; 
+    background-color: #fff;/* Optional: add a border around the table */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f4f4f4; /* Optional: background color for the header */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+TR:hover
+{
+    background-color: #007BFF;
+}
+tbody tr:nth-child(odd,EVEN) {
+    background-color: #f9f9f9;
+}
+.overalltable
+{
+    background-color: #f3f3f4;
+    width: 80%;
+    height: 100%;
+    border-radius: 70px;
+}
+.tabletoptittle
+{ border-radius:10px;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: #007BFF;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+#tabletoptittlecontent
+{  padding: 4px;
+    text-align:left;
+    font-size: 20px;
+}
+.next
+{
+     position: absolute;
+    display: flex;
+top:1100px;
+align-items: center;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+flex-direction:column;
+    width:100%;
+    height: (100vh - 100px); 
+    background-color: #FFF;
+}
